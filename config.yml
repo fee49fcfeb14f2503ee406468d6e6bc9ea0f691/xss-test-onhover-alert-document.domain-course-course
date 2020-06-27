@@ -1,0 +1,17 @@
+title: xss-test--onhover-alert-document.domain--course
+description: >-
+  xss-test--onhover-alert-document.domain--coursexss-test--onhover-alert-document.domain--coursexss-test--onhover-alert-document.domain--coursexss-test--onhover-alert-document.domain--coursexss-test--onhover-alert-document.domain--coursexss-test--onhover-al
+template:
+  repo: xss-test-onhover-alert-document.domain-course-template
+  name: xss-test-onhover-alert-document.domain-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
